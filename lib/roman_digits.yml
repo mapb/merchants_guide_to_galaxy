@@ -1,0 +1,40 @@
+I:
+  :value: 1
+  :repetitions: 3
+  :substractable_from:
+    - V
+    - X
+
+V:
+  :value: 5
+  :repetitions: 0
+  :substractable_from: []
+
+X:
+  :value: 10
+  :repetitions: 3
+  :substractable_from:
+    - L
+    - C
+
+L:
+  :value: 50
+  :repetitions: 0
+  :substractable_from: []
+
+C:
+  :value: 100
+  :repetitions: 3
+  :substractable_from:
+    - D
+    - M
+
+D:
+  :value: 500
+  :repetitions: 0
+  :substractable_from: []
+
+M:
+  :value: 1000
+  :repetitions: 3
+  :substractable_from: []

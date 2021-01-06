@@ -1,5 +1,4 @@
 require_relative '../roman_number'
-require 'pry'
 
 describe RomanNumber do
   describe '#to_decimal' do

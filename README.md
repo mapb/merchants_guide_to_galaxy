@@ -10,11 +10,13 @@ Start converter CLI:
 Type `exit` to exit the program.
 
 ## Testing
-Run RSpec tests:
+### Install Rspec
+`gem install bundler`
+`bundle install`
 
-`rspec spec`
+### Run tests:
+`bundle exec rspec spec`
 
 ## Dependencies:
-
 `ruby >= 2.6`
 `rspec >= 3.6`

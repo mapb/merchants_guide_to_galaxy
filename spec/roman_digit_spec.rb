@@ -1,5 +1,4 @@
 require_relative '../roman_digit'
-require 'pry'
 
 describe RomanDigit do
   let(:roman_digit) { RomanDigit.new('I') }

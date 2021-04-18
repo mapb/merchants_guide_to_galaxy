@@ -1,14 +1,14 @@
 require './roman_digit'
 
 class RomanNumber
-  def initialize(number)
-    @digits = number.split('').map { |roman_digit| RomanDigit.new(roman_digit) }
+  def initialize(roman_number_string)
+    @roman_number_string = roman_number_string
   end
 
   def to_decimal
     repetitions, preceeding_digit = Hash.new(0), nil
 
-    @digits.reduce(0) do |sum, digit|
+    digits.reduce(0) do |sum, digit|
       repetitions[digit.digit_string] += 1
 
       raise "#{digit.digit_string} cannot be repeated more than #{digit.repetitions} times" unless
@@ -22,5 +22,11 @@ class RomanNumber
 
       sum += digit.value - subtractor
     end
+  end
+
+  private
+
+  def digits
+    @roman_number_string.split('').map { |roman_digit| RomanDigit.new(roman_digit) }
   end
 end
